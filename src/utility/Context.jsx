@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 
-const appContext = createContext('');
+const appContext = createContext();
 
 export const AppContext = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false);
