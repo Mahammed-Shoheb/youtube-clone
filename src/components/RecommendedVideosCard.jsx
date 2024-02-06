@@ -40,7 +40,7 @@ const RecommendedVideosCard = ({ video }) => {
               {snippet?.channelTitle}
             </Typography>
 
-            <CheckCircleOutlineIcon fontSize='small' />
+            <CheckCircleOutlineIcon sx={{ fontSize: '0.8rem' }} />
           </Stack>
           {/* <Typography variant='caption'>
             {views} views · Streamed {timestamp}

@@ -118,10 +118,10 @@ const VideoPage = () => {
                 <Avatar sx={{ width: 30, height: 30 }} />
                 <Typography variant={'caption'}>
                   {snippet?.channelTitle}
-                  <CheckCircleOutlineIcon
-                    sx={{ fontSize: '15px', color: 'gray', ml: '5px' }}
-                  />
                 </Typography>
+                <CheckCircleOutlineIcon
+                  sx={{ fontSize: '0.8rem', color: 'gray', ml: '5px' }}
+                />
               </Link>
               <Stack direction='row' gap='20px' alignItems='center'>
                 {statistics.viewCount ? (

@@ -39,7 +39,7 @@ const FeedVideoCard = ({ video }) => {
                 {snippet?.channelTitle}
               </Typography>
 
-              <CheckCircleOutlineIcon sx={{ fontSize: '15px' }} />
+              <CheckCircleOutlineIcon sx={{ fontSize: '0.8rem' }} />
             </Stack>
             {/* <Stack>
               <Typography

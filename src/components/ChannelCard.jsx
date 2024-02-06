@@ -48,7 +48,7 @@ const ChannelCard = ({ channelDetail }) => {
                 {snippet?.title}
               </Typography>
 
-              <CheckCircleOutlineIcon sx={{ fontSize: '15px' }} />
+              <CheckCircleOutlineIcon sx={{ fontSize: '0.8rem' }} />
             </Stack>
             {/* <Typography variant='caption'>
             {channelId} · {subs} Subscribers

@@ -115,7 +115,7 @@ const ChannelPage = () => {
                 Subscribe
               </button>
               <Typography
-                sx={{ background: '#606060', borderRadius: 20, px: 2, py: 1 }}
+                sx={{ background: '#eee', borderRadius: 20, px: 2, py: 1 }}
               >
                 Join
               </Typography>
