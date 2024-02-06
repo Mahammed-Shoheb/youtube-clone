@@ -7,6 +7,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { fetchFromAPI } from '../utility/fetchFromAPI';
 import { useGlobalContext } from '../utility/Context';
+import useScrollToTop from '../utility/useScrollToTop';
 
 const VideoPage = () => {
   const [videoDetail, setVideoDetail] = useState(null);
@@ -24,6 +25,8 @@ const VideoPage = () => {
       `search?relatedToVideoId=${videoID}&part=id%2Csnippet&type=video`
     ).then((data) => setVideos(data.items));
   }, [videoID]);
+
+  useScrollToTop();
 
   if (!videoDetail) {
     return (

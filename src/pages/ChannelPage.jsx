@@ -4,6 +4,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { FeedVideos } from '../components';
 import { fetchFromAPI } from '../utility/fetchFromAPI';
 import { useState, useEffect } from 'react';
+import useScrollToTop from '../utility/useScrollToTop';
 
 const ChannelPage = () => {
   const [videos, setVideos] = useState(null);
@@ -19,6 +20,7 @@ const ChannelPage = () => {
       `search?channelId=${pathname.slice(1)}&part=snippet%2Cid&order=date&`
     ).then((data) => setVideos(data.items));
   }, [pathname]);
+  useScrollToTop();
 
   // if (!snippet || !videos) return <h1>loadding....</h1>;
   if (!channelDetail) {

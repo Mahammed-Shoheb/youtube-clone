@@ -4,9 +4,11 @@ import FeedShortSidebar from '../components/FeedShortSidebar';
 import { Outlet } from 'react-router-dom';
 
 import { useGlobalContext } from '../utility/Context';
+import useScrollToTop from '../utility/useScrollToTop';
 
 const HomeLayout = () => {
   const { showSidebar, setShowSidebar } = useGlobalContext();
+  useScrollToTop();
   return (
     <>
       <Navbar setShowSidebar={setShowSidebar} />

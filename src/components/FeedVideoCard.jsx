@@ -4,6 +4,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const FeedVideoCard = ({ video }) => {
   const { id, snippet } = video;
+  if (id.videoId === undefined) return false;
   return (
     <Stack mb={2}>
       <Link

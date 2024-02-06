@@ -4,6 +4,7 @@ import SearchVideoCard from '../components/SearchVideoCard';
 import { fetchFromAPI } from '../utility/fetchFromAPI';
 import { useSearchParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import useScrollToTop from '../utility/useScrollToTop';
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
@@ -16,7 +17,7 @@ const SearchPage = () => {
       setVideos(data.items)
     );
   }, [q]);
-
+  useScrollToTop();
   if (!videos) {
     return (
       <Stack p={2}>
