@@ -2,7 +2,7 @@ import FeedSidebar from './FeedSidebar';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box, IconButton, Stack, Slide, Collapse } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 
 const WatchVideoSidebar = () => {
   const { setShowSidebar, showSidebar } = useGlobalContext();

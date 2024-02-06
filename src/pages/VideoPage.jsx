@@ -6,7 +6,7 @@ import { RecommendedVideosCard, ChannelCard } from '../components';
 import { Link, useSearchParams } from 'react-router-dom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { fetchFromAPI } from '../utility/fetchFromAPI';
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 
 const VideoPage = () => {
   const [videoDetail, setVideoDetail] = useState(null);

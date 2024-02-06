@@ -2,7 +2,7 @@ import { Paper, IconButton, Stack } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 
 const SearchBar = () => {
   const [showSearchIcon, setShowSearchIcon] = useState(false);

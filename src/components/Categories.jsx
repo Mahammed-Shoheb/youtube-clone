@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { categories } from '../utility/constant';
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 
 const Categories = () => {
   const { selectedCategory, setSelectedCategory } = useGlobalContext();

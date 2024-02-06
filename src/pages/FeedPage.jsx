@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import Categories from '../components/Categories';
 import FeedVideos from '../components/FeedVideos';
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 import { fetchFromAPI } from '../utility/fetchFromAPI';
 import { useEffect, useState } from 'react';
 

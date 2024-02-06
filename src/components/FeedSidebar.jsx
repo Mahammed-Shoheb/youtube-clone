@@ -9,7 +9,7 @@ import {
 } from '../utility/constant';
 import SidebarLink from './SidebarLink';
 import { Link } from 'react-router-dom';
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 
 const FeedSidebar = () => {
   const { selectedCategory, setSelectedCategory } = useGlobalContext();

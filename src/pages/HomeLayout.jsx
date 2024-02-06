@@ -3,7 +3,7 @@ import { FeedSidebar, Navbar, WatchVideoSidebar } from '../components';
 import FeedShortSidebar from '../components/FeedShortSidebar';
 import { Outlet } from 'react-router-dom';
 
-import { useGlobalContext } from '../utility/context';
+import { useGlobalContext } from '../utility/Context';
 
 const HomeLayout = () => {
   const { showSidebar, setShowSidebar } = useGlobalContext();
